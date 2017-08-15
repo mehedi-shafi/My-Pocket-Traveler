@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="100dp"
+    android:background="@drawable/throw_back_bg"
+    android:layout_centerHorizontal="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/travel_title"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_brown"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/lookBackRowTitle"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_model"
+        android:textSize="20sp"
+        android:layout_below="@id/lookBackRowTitle"
+        android:layout_marginLeft="10dp"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:id="@+id/lookBackRowDate"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_model"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:layout_below="@id/lookBackRowDate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/lookBackRowPlace"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.enf.com.mypockettraveller.ViewTravelDetails">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/travelDetailsTitle"
+            android:text="@string/travel_title"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/light_blue_dark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/travelDetailsDate"
+            android:layout_below="@id/travelDetailsTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="@string/date_model"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:text="@string/place_model"
+            android:layout_below="@id/travelDetailsDate"
+            android:id="@+id/travelDetailsLocation"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/duration_text"
+            android:id="@+id/travelDetailsDuration"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/travelDetailsLocation"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/travelDetailsRating"
+           android:layout_below="@id/travelDetailsDuration"
+           android:text="@string/five_star"
+           android:textSize="40sp"
+           android:textColor="@color/gold_color"
+           android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/travelDetailsTags"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/travelDetailsRating"
+            android:layout_marginTop="5dp"
+            android:text="@string/demo_tags"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/travelDetailsDescription"
+            android:layout_below="@id/travelDetailsTags"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="start"
+            android:text="@string/demo_description"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/travelDetailsEditButton"
+            android:src="@drawable/edit_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="35dp"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

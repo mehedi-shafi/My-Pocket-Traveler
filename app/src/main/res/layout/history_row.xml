@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/history_list_row_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listRowPlaceNameText"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/place_model"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listRowDateText"
+        android:text="@string/date_model"
+        android:layout_below="@id/listRowPlaceNameText"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listRowDurationText"
+        android:layout_toRightOf="@id/listRowDateText"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/listRowPlaceNameText"
+        android:layout_marginTop="4dp"
+        android:text="@string/duratIon_model"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listRowTravelTypeText"
+        android:text="@string/travel_title"
+        android:layout_below="@id/listRowDateText"
+        android:layout_marginTop="5dp"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listRowRatingText"
+        android:layout_marginLeft="25dp"
+        android:textSize="25sp"
+        android:layout_below="@id/listRowDateText"
+        android:layout_toRightOf="@id/listRowTravelTypeText"
+        android:layout_marginTop="15dp"
+        android:textColor="#fbc02d"
+        android:text="@string/five_star"/>
+</RelativeLayout>

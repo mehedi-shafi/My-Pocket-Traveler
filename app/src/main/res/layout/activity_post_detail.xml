@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.enf.com.mypockettraveller.ActivityPostDetail">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+           android:id="@+id/detail_poster"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/dark_brown"
+            android:text="Israt"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_post_title"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:text="Boo"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:textColor="@color/blue_gray_light"
+            android:id="@+id/location_detail"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/place_model"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:id="@+id/detail_desription"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/demo_description"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rating_detail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/user_rated_text"
+            android:textSize="16sp"
+            android:textStyle="italic"/>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

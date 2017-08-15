@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.enf.com.mypockettraveller.InputNewTravel">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/inpuLocationTextText"
+            android:text="@string/typing_location"
+            android:layout_marginLeft="20dp"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"            />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/inpuLocationTextText"
+            android:id="@+id/inputLocationInput"
+            android:layout_marginLeft="30dp"
+            android:background="#eeeeee"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:hint="@string/location_input_hint"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputPlacePickerOpenButton"
+            android:layout_below="@id/inputLocationInput"
+            android:background="@color/blue_gray_light"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/open_place_picker"/>
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputPlacePickerOpenButton"
+            android:id="@+id/inputTravelTitleText"
+            android:text="@string/travel_title_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            />
+
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/locationTitleInput"
+            android:layout_toRightOf="@id/inputTravelTitleText"
+            android:background="#eeeeee"
+            android:layout_below="@id/inputPlacePickerOpenButton"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:hint="@string/travel_title_hint"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputDurationText"
+            android:layout_below="@id/inputTravelTitleText"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:text="@string/duration_text"
+            android:textStyle="normal"/>
+
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputDurationDuration"
+            android:layout_below="@id/inputTravelTitleText"
+            android:layout_toRightOf="@id/inputDurationText"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:background="#eeeeee"
+            android:textColor="#B0B5B9"
+            android:hint="@string/duration_hint"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputDescriptionText"
+            android:layout_below="@id/inputDurationText"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:text="@string/description_text"/>
+
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="200dp"
+            android:id="@+id/inputDescriptionDescription"
+            android:layout_toRightOf="@id/inputDescriptionText"
+            android:layout_below="@id/inputDurationDuration"
+            android:hint="@string/description_hint"
+            android:gravity="start"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputRatingTextText"
+            android:text="@string/rating_text"
+            android:layout_below="@id/inputDescriptionDescription"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <RatingBar
+            android:id="@+id/inputRatingRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputDescriptionDescription"
+            android:layout_toRightOf="@id/inputRatingTextText"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:max="5"
+            android:numStars="5"
+            android:stepSize="1"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputTagText"
+            android:layout_below="@id/inputRatingRating"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/tag_text"
+            android:textSize="20sp"
+            android:textStyle="normal"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:id="@+id/inputTagInput"
+            android:layout_below="@id/inputRatingRating"
+            android:layout_toRightOf="@id/inputTagText"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:background="#eeeeee"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:hint="@string/tag_hint"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inputSubmitButton"
+            android:layout_below="@id/inputTagInput"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/input_submit_button"/>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

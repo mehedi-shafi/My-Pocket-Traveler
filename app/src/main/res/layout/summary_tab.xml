@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="project.enf.com.mypockettraveller.MainActivity$PlaceholderFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/summary_title"
+        android:id="@+id/summaryTitleText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#303f9f"
+        android:layout_marginTop="5dp"/>
+    
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/cardview_dark_background"
+        android:layout_below="@id/summaryTitleText"
+        android:layout_marginTop="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        android:id="@+id/summaryDateCard">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textColor="#fafafa"
+            android:text="@string/date_model"
+            android:id="@+id/summaryDateDateText"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_model"
+            android:id="@+id/summaryDateTimeText"
+            android:layout_marginTop="60dp"
+            android:textSize="30sp"
+            android:textColor="#fafafa"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    </android.support.v7.widget.CardView>
+    
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/summarySummaryCard"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#b2ebf2"
+        android:layout_below="@id/summaryDateCard"
+        android:layout_marginTop="10dp"
+        >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="100sp"
+            android:text="@string/visited_count"
+            android:id="@+id/summaryPlaceVIsitedCountText"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/summaryPlaceVisitedTextText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="75dp"
+
+            android:text="@string/travel_count"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+
+    </android.support.v7.widget.CardView>
+    
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#bcaaa4"
+        android:layout_below="@id/summarySummaryCard"
+        android:layout_marginTop="5dp"
+       app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        android:id="@+id/summaryLookBackCard">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@id/android:list"
+            android:divider="#5d4037"
+            android:dividerHeight="2dp">
+
+        </ListView>
+       
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

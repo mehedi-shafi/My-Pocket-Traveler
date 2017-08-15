@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">My Pocket Traveller</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="summary_title">Welcome to your pocket traveler</string>
+    <string name="travel_count">Places you have travelled to. </string>
+    <string name="place_text">Places</string>
+    <string name="asterisk">*</string>
+    <string name="add_travel_button">Add </string>
+    <string name="visited_count">13</string>
+    <string name="date_model">July 17, 2017</string>
+    <string name="time_model">11:56 AM</string>
+    <string name="place_model">Cox\'s Bazar</string>
+    <string name="travel_title">Cousin Tour</string>
+    <string name="five_star">*****</string>
+    <string name="four_star">****</string>
+    <string name="three_star">***</string>
+    <string name="two_star">**</string>
+    <string name="duratIon_model">5 days</string>
+    <string name="picture_taken_text">Picture added: </string>
+    <string name="picture_count">50</string>
+    <string name="open_place_picker">Open Map</string>
+    <string name="typing_location">Place</string>
+    <string name="tour_type">Tour Type</string>
+    <string name="duration_text">Duration</string>
+    <string name="travel_title_text">Title</string>
+    <string name="location_input_hint">Location of the travel</string>
+    <string name="travel_title_hint">Give your visit a title</string>
+    <string name="from_text">From</string>
+    <string name="to_text">To</string>
+    <string name="duration_hint">How many days you spent?</string>
+    <string name="description_text">Description</string>
+    <string name="description_hint">Add a description to your travel</string>
+    <string name="input_submit_button">Add</string>
+    <string name="rating_text">Rating</string>
+    <string name="tag_text">Add tag(s)</string>
+    <string name="tag_hint">Add comma(,) separated tags.</string>
+    <string name="demo_description">Had fun in this travel. We went to that place to do nothing serious. This is just a demo description which I really do not use in my own diarly or whatever. Anyways things are not as they seem they are. This app making is pretty fun. But making the layouts is really taking the time and its mostly killing it. I am pretty sweatting doing the layout designing shits. HALPP!!!! xD GJ GG WELL DONE MASTER YI FED GG</string>
+    <string name="demo_tags">Chill, Family, Beach, hangout, Riding, Eat</string>
+    <string name="demo_tag">Chill</string>
+    <string name="sign_in_text">Sign In</string>
+
+    <string name="status_text">Current Status</string>
+    <string name="logged_in">Logged In</string>
+    <string name="logged_out">Logged Out</string>
+    <string name="log_out">Log Out</string>
+    <string name="user_rated_text">The user rated this visit: </string>
+
+
+    <string name="auth_client_id">166749036611-7svsq37eo5fircdjmb1attu96inrhld9.apps.googleusercontent.com</string>
+
+
+</resources>
